@@ -1,22 +1,20 @@
-import logo from './logo.svg';
+import './bootstrap/css/bootstrap.min.css';
 import './App.css';
+import FormList from './com/form_list';
+
+
+const _min = "<input type=''>";
+const _max = "<input type=''>";
+const _dur = "<input type=''>";
+const _int = "<input type=''>";
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <FormList min={ _min } max={ _max } dur={ _dur } inter={ _int} />
+        
       </header>
     </div>
   );
